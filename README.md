@@ -1,36 +1,47 @@
 # GitHub Activity Analysis Agent
 
+![GitHub Activity Analysis Agent](https://img.shields.io/badge/AI-Powered-blue)
+![Status](https://img.shields.io/badge/Status-Active-green)
+
 A low-code AI-powered tool for analyzing GitHub repository activity, with a focus on blockchain projects. This project demonstrates the application of AI/automation to solve real-world problems in blockchain research and development.
 
-## Project Overview
+## 🌟 Project Overview
 
-This tool helps blockchain researchers and developers track, analyze, and summarize developments across multiple blockchain projects. It:
+This tool helps blockchain researchers and developers track, analyze, and summarize developments across multiple blockchain projects. It offers both quantitative metrics and qualitative insights into repository activity, helping identify trends, key developments, and collaboration patterns.
 
-1. Collects GitHub activity data (commits, issues, PRs, releases)
-2. Analyzes patterns and trends using AI
-3. Generates insightful summaries and reports
-4. Provides a query interface for exploring repository data
+![Screenshot](./docs/screenshot.png)
 
-## Key Features
+## ✨ Key Features
 
-- **Automated Data Collection**: Fetches repository activity using the GitHub API
-- **AI-Powered Analysis**: Uses LLMs to identify key developments and trends
-- **Multi-Repository Comparison**: Compares activity across different blockchain projects
-- **Interactive Dashboard**: Visual interface for exploring repository data
+### Data Collection & Processing
+- **Automated GitHub Data Retrieval**: Fetches repository data including commits, issues, PRs, and releases
+- **Historical Data Analysis**: Analyze repository activity over customizable time ranges
+- **Multi-Repository Support**: Track and compare multiple blockchain projects simultaneously
+- **Data Persistence**: Save repository data locally for offline analysis
+
+### Visualization & Analysis
+- **Repository Overview**: Key metrics dashboard showing stars, forks, activity counts
+- **Contributor Analysis**: Identify top contributors and collaboration patterns
+- **Activity Timelines**: Track development velocity across projects
+- **Recent Activity Dashboard**: See the latest commits, issues, and pull requests
+
+### AI-Powered Insights
+- **Automated Summaries**: Generate concise, insightful summaries of repository activity
+- **Key Development Identification**: AI identifies significant changes and emerging trends
+- **Cross-Repository Comparison**: Compare activity patterns across different blockchain projects
 - **Natural Language Querying**: Ask questions about repositories in plain English
-- **RAG-Enhanced Responses**: Uses Retrieval-Augmented Generation for accurate insights
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Python**: Core programming language
 - **Streamlit**: Interactive web dashboard
-- **LangChain**: Orchestrating AI components
-- **OpenAI API**: LLM for analysis and insights
+- **LangChain**: Orchestrates AI components and RAG implementation
+- **OpenAI API**: Powers the AI analysis and natural language understanding
+- **GitHub API**: Data collection from repositories
 - **ChromaDB**: Vector database for RAG implementation
-- **Plotly**: Data visualization
-- **GitHub API**: Data collection
+- **Plotly**: Data visualization components
 
-## Getting Started
+## 🏃‍♂️ Getting Started
 
 ### Prerequisites
 
@@ -61,12 +72,12 @@ This tool helps blockchain researchers and developers track, analyze, and summar
    ```
    GITHUB_TOKEN=your_github_token_here
    OPENAI_API_KEY=your_openai_api_key_here
-   REPOS=ethereum/go-ethereum,starkware-libs/starknet-sdk
+   REPOS=ethereum/go-ethereum,worldcoin/world-id-contracts
    ```
 
 ### Running the Application
 
-Run the Streamlit dashboard:
+Launch the Streamlit dashboard:
 ```bash
 streamlit run src/app.py
 ```
@@ -76,58 +87,85 @@ Or use the command-line interface:
 python src/main.py
 ```
 
-## Project Structure
+## 📊 Dashboard Features
 
-```
-github-analysis-agent/
-├── data/               # Stored repository data and reports
-├── src/
-│   ├── api/            # GitHub API client
-│   ├── agents/         # LLM agent implementations
-│   ├── db/             # Vector database functionality
-│   ├── utils/          # Data processing utilities
-│   ├── app.py          # Streamlit dashboard
-│   └── main.py         # CLI application
-├── .env                # Environment variables
-└── README.md           # Project documentation
-```
+### Repository Overview Tab
+- Repository information (stars, forks, open issues)
+- Activity summary (commits, issues, PRs, releases)
+- Top contributors visualization
+- Daily commit activity chart
 
-## Usage Examples
+### Activity Analysis Tab
+- Detailed views of recent commits
+- Issue tracking and visualization
+- Pull request analysis
+- Release information
 
-### Tracking Development Activity
+### AI Insights Tab
+- AI-generated activity summaries
+- Key development identification
+- Comparative analysis across repositories
+- Trend detection
 
-Monitor commit activity across multiple blockchain repositories to identify active areas of development and emerging patterns.
+### Query Engine Tab
+- Natural language interface to repository data
+- RAG-enhanced responses for accurate insights
+- Query across multiple repositories
 
-### Comparing Project Approaches
+## 💼 Use Cases
 
-Compare how different blockchain projects approach similar technical challenges, based on their repository activity.
+### For Blockchain Researchers
+- Track development progress across multiple blockchain projects
+- Identify emerging trends in blockchain technology
+- Compare implementation approaches to similar problems
+- Stay updated on protocol changes and upgrades
 
-### Identifying Cross-Project Trends
+### For Blockchain Developers
+- Monitor activity in dependencies and related projects
+- Identify active areas of development to focus contributions
+- Study code changes and architectural decisions
+- Find cross-project collaboration opportunities
 
-Discover trends that span multiple blockchain projects to get early insights into industry direction.
+### For Project Managers
+- Measure development velocity and contributor activity
+- Identify bottlenecks in development workflows
+- Track issue resolution and feature development timelines
+- Generate activity reports for stakeholders
 
-### Answering Research Questions
+## 🔍 Example Queries
 
-Use the query engine to ask specific questions about repository activity:
+The Query Engine supports questions like:
 - "What are the most active areas of development in the Ethereum codebase?"
 - "How has the focus on ZK-proofs evolved across projects?"
 - "Which contributors are working across multiple projects?"
+- "What are the recent security-related changes?"
+- "Summarize the key changes in the last release"
 
-## Extending the Project
+## 🚀 Future Enhancements
 
-The modular design makes it easy to extend:
+- **Additional Data Sources**: Integration with Discord, forums, and documentation repositories
+- **Smart Contract Analysis**: Specialized tracking of changes to smart contract code
+- **Customizable Metrics**: User-defined KPIs and tracking metrics
+- **Notification System**: Alerts for significant developments
+- **Export Capabilities**: Report generation in various formats
 
-1. Add more data sources (Discord, forums, etc.)
-2. Implement additional analysis agents
-3. Create custom visualizations
-4. Add project-specific metrics and insights
+## 🤝 Contributing
 
-## License
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Built with [LangChain](https://github.com/langchain-ai/langchain)
 - Uses the [GitHub API](https://docs.github.com/en/rest)
 - Dashboard created with [Streamlit](https://streamlit.io/)
+- Inspired by the needs of blockchain researchers and developers
