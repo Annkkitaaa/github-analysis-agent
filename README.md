@@ -165,7 +165,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [LangChain](https://github.com/langchain-ai/langchain)
 - Uses the [GitHub API](https://docs.github.com/en/rest)
