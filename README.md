@@ -1,17 +1,22 @@
 # GitHub Activity Analysis Agent
 
-![GitHub Activity Analysis Agent](https://img.shields.io/badge/AI-Powered-blue)
-![Status](https://img.shields.io/badge/Status-Active-green)
+A AI-powered tool for analyzing GitHub repository activity. This project demonstrates the application of AI/automation to solve real-world problems in research and development.
 
-A low-code AI-powered tool for analyzing GitHub repository activity, with a focus on blockchain projects. This project demonstrates the application of AI/automation to solve real-world problems in blockchain research and development.
+##  Project Overview
 
-## 🌟 Project Overview
+This tool helps researchers and developers track, analyze, and summarize developments across multiple projects. It:
 
-This tool helps blockchain researchers and developers track, analyze, and summarize developments across multiple blockchain projects. It offers both quantitative metrics and qualitative insights into repository activity, helping identify trends, key developments, and collaboration patterns.
+- Collects GitHub activity data (commits, issues, PRs, releases)
+- Analyzes patterns and trends using AI
+- Generates insightful summaries and reports
+- Provides a query interface for exploring repository data
 
-![Screenshot](./docs/screenshot.png)
+![image](https://github.com/user-attachments/assets/3ddde90d-666f-42ea-8692-9aa8855109b5)
+![image](https://github.com/user-attachments/assets/3bd891fd-9d9c-4e75-9656-a07a66039041)
 
-## ✨ Key Features
+
+
+## Key Features
 
 ### Data Collection & Processing
 - **Automated GitHub Data Retrieval**: Fetches repository data including commits, issues, PRs, and releases
@@ -31,7 +36,7 @@ This tool helps blockchain researchers and developers track, analyze, and summar
 - **Cross-Repository Comparison**: Compare activity patterns across different blockchain projects
 - **Natural Language Querying**: Ask questions about repositories in plain English
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Python**: Core programming language
 - **Streamlit**: Interactive web dashboard
@@ -41,7 +46,7 @@ This tool helps blockchain researchers and developers track, analyze, and summar
 - **ChromaDB**: Vector database for RAG implementation
 - **Plotly**: Data visualization components
 
-## 🏃‍♂️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -53,7 +58,7 @@ This tool helps blockchain researchers and developers track, analyze, and summar
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/github-analysis-agent.git
+   git clone https://github.com/Annkkitaaa/github-analysis-agent.git
    cd github-analysis-agent
    ```
 
@@ -87,7 +92,7 @@ Or use the command-line interface:
 python src/main.py
 ```
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 ### Repository Overview Tab
 - Repository information (stars, forks, open issues)
@@ -112,7 +117,7 @@ python src/main.py
 - RAG-enhanced responses for accurate insights
 - Query across multiple repositories
 
-## 💼 Use Cases
+##  Use Cases
 
 ### For Blockchain Researchers
 - Track development progress across multiple blockchain projects
@@ -141,7 +146,7 @@ The Query Engine supports questions like:
 - "What are the recent security-related changes?"
 - "Summarize the key changes in the last release"
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - **Additional Data Sources**: Integration with Discord, forums, and documentation repositories
 - **Smart Contract Analysis**: Specialized tracking of changes to smart contract code
@@ -149,7 +154,7 @@ The Query Engine supports questions like:
 - **Notification System**: Alerts for significant developments
 - **Export Capabilities**: Report generation in various formats
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -159,9 +164,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
