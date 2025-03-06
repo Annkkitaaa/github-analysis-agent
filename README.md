@@ -170,4 +170,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Built with [LangChain](https://github.com/langchain-ai/langchain)
 - Uses the [GitHub API](https://docs.github.com/en/rest)
 - Dashboard created with [Streamlit](https://streamlit.io/)
-- Inspired by the needs of blockchain researchers and developers
+
